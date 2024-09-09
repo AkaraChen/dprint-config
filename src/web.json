@@ -1,0 +1,20 @@
+{
+    "$schema": "https://dprint.dev/schemas/v0.json",
+    "extends": ["./base.json"],
+    "excludes": [
+        "**/node_modules",
+        "**/*-lock.json",
+        "**/pnpm-lock.yaml",
+        "**/yarn.lock"
+    ],
+    "biome": {
+        "quoteStyle": "single"
+    },
+    "malva": {},
+    "markup": {},
+    "plugins": [
+        "https://plugins.dprint.dev/biome-0.6.0.wasm",
+        "https://plugins.dprint.dev/g-plane/malva-v0.10.1.wasm",
+        "https://plugins.dprint.dev/g-plane/markup_fmt-v0.12.0.wasm"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "$schema": "https://dprint.dev/schemas/v0.json",
+    "extends": ["./base.json"],
+    "exec": {
+        "cwd": "${configDir}",
+        "commands": [
+            {
+                "command": "rustfmt --edition 2021",
+                "exts": ["rs"]
+            }
+        ]
+    }
+}
